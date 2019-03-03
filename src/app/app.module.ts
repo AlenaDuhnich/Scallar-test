@@ -9,6 +9,9 @@ import { ProductsService } from './services/products.service';
 import { HttpClientModule } from '@angular/common/http';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ProductItemComponent } from './components/product-item/product-item.component';
+import { HomeComponent } from './components/home/home.component';
+import {RoutingModule} from './routing.module';
 
 @NgModule({
   declarations: [
@@ -16,12 +19,15 @@ import { FooterComponent } from './components/footer/footer.component';
     NavbarComponent,
     ProductsComponent,
     SidebarComponent,
-    FooterComponent
+    FooterComponent,
+    ProductItemComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    RoutingModule
   ],
   providers: [ProductsService],
   bootstrap: [AppComponent]
